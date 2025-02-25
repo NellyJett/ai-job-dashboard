@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Overview
+This is a mini-project built as part of a Frontend Developer interview assignment. The "AI-Powered Job Match Dashboard" displays job recommendations with AI-generated match scores, allowing users to view job details and apply for jobs. It demonstrates skills in Next.js, React, Tailwind CSS, API handling, responsive design, and UI/UX principles.
 
-## Getting Started
+**Features**:
+Job List: Displays a list of job recommendations with title, company, location, salary, and match score.
+Match Score Visualization: Shows job fit as a progress bar with color coding (Green: 80%+, Yellow: 50-79%, Red: <50%).
+Job Details Modal: Clicking a job opens a modal with detailed info and required skills.
+Apply Now: Simulates job application with alerts for missing skills and upskilling suggestions.
+Responsive Design: Adapts seamlessly to mobile, tablet, and desktop screens.
 
-First, run the development server:
+**Interaction**:
+   - Click a job card to view details in a modal.
+   - Click "Apply Now" to simulate an application, with alerts for missing skills.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Data Source**: 
+Job listings are fetched dynamically from `/jobs.json` in the `public/` folder using Axios, simulating an API call.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Tech Stack**:
+Frontend Framework: Next.js (React)
+Styling: Tailwind CSS
+State Management: React useState
+Data: Mock job data from a local JSON file
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**requirements**:
+Before running the project, ensure you have:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Node.js (v16 or later) installed
+npm (comes with Node.js) 
